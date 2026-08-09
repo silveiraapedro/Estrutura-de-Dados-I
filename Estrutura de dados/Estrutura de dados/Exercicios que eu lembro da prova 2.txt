@@ -1,0 +1,7 @@
+1 - fazer uma lista duplamente encadeada ordenada baseada no exercicio 3 de lista ordenada da lista 07. Obs: era pra fazer ela inteira, menu, init , tudo.
+
+2 - questão de alternativa sobre teoria logica de listas, alguma coisa assim, de como elas funcionavam.
+
+3 - implementer uma função que contava o numero de vogais dentro de uma cadeia de caracteres.
+
+4 - questão de alternativa sobre a logica de como funciona a inserçã em pilha e fila dinamica e interpretar qual era a ordem certa de como foi inserido.

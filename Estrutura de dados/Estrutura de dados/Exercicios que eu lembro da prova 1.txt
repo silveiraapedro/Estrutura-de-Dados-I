@@ -1,0 +1,6 @@
+1 - Criar uma estrutura que armazenava um ponto x e y dentro de um typedef struct, e implementar certas funções como adicionar e e excluir (talvez)
+
+2 - Criar uma estrutura que armazenava as informações de escolas de samba, ai criar a função de inserir e excluir(talvez), na de inserir tinha que verificar
+quantos carros alegoricos passariam no primeiro dia
+
+3 - Montar o programa inteiro de uma pilha que armazenaria em duas pilhas diferentes homens e mulheres
