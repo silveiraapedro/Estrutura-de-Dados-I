@@ -1,0 +1,191 @@
+* Lista, funções a serem lembradas: 
+void enfileirar(Fila *f, int elem(ou char dependo da ocasião), int pos) /// isso nesse caso se for por posicao
+{
+	if(lista_cheia(f))
+	{
+	printf("ERRO - Lista Vazia.\n);
+	}
+
+	for(int i = (l->n+1); i<pos; i++)
+	{
+	L->n = l->n - 1;
+	}
+
+	l->valor[pos] = elem;
+	l-> n = l-> n + 1;
+}
+
+void desenfileira(Fila *f, int pos)
+{
+int aux = 0;
+
+	if(lista_vazia(f))
+	{
+	printf("ERRO - Lista vazia.);
+	}
+
+	for(int i = 0; i<pos; i++)
+	{
+	l->n = l->n+1;
+	}
+
+aux = l->itens[pos];
+l->n = l->n-1;
+}
+
+void provurar_pos(Lista *f, int pos)
+{
+	if(pos<0 || pos> l->n+1)
+	{
+		printf("ERRO - Posicao invalida.\n");
+		return 1;
+	}
+
+	printf("Elemento na posicao %d era: %d\n", pos, l->itens[pos]);
+}
+
+void procurar_elemento(Lista *l, int porra)
+{
+	int i = 0;
+	int elem = -1;
+
+	while(i < l->n+1)
+	{
+		if(porra == l->itens[i])
+			printf("Posição[%d]: %d\n", i, l->itens[i]);
+			i = elem;
+			break;
+		i++
+	}
+}
+
+void apresentar(Fila *f)
+{
+
+for(int i = 0; i<l->n; i++)
+printf("Posicao[%d]: %d\n", i+1, l->itens[i]);
+}
+
+
+* Pilha 
+
+lista_cheia(pilha *p)
+{
+	if(p->n == TAM -1)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+void pop(Pilha *p, int elem)
+{
+
+ 	if(lista_vazia(p))
+	{
+	printf("ERRO - Lista vazia);
+	}
+
+	p->n = p->n+1;
+	p->itens[p->n] = elem;
+}
+
+void push(Pilha *p)
+{
+
+	if(lista_vazia(p))
+	{
+	printf("ERRO - Lista vazia.");
+	}
+	
+	aux = p->itens[p->n];
+	p-> n = p->n-1;
+}
+
+
+
+* Fila / Deque
+void enfileirar(Fila *f, int elem)
+{
+f->fim = (f->fim + 1) %TAM; /// Ele vai retornar o resto, ou seja se f->fim + 1 for 1, o resto vai ser 1, se for 2 0
+	if(lista_cheia(f))
+	{
+	f->fim = f->fim--;
+	if(f->fim == -1)
+		{
+		f->fim = TAM -1;
+		}
+	}
+	else
+	{	
+	f-itens[f->fim] = elem;
+	}
+}
+
+int desenfileirar(Fila *f)
+{
+ int aux = 0;
+	
+	if(!lista_vazia(f);
+	{
+	f->inicio = (f->inicio + 1) % TAM;
+	aux = f->itens[f->inicio];
+	
+	}
+	else
+	{
+	printf("ERRO - Lista vazia.\n);
+	return 1;
+	}
+return aux;
+}
+
+int inserir_inicio(Fila *f, int elem)
+{
+	if(f->inicio == 0) /// Se caso a posicao do inicio for 0
+	{
+		f->inicio = TAM - 1; /// vai fazer com que ele fique no final da array, por ser circular,
+							 /// se acabar, ela vai volta pro final
+ 	}
+	else
+	{
+		(f->inicio)--; /// se caso não for só vai diminuir o tamanho do inicio para abrir espaço antes dele
+	}
+
+	if(fila_cheia(f))
+	{
+		printf("A lista esta cheia");
+		f->inicio = (f->inicio + 1)% TAM; 
+		return 1;
+	}
+
+	f->itens[(f->inicio + 1) % TAM] = elem;
+}
+
+int excluir_fim(Fila *f)
+{
+	int aux = 0;
+
+	if(!vazia(f))
+	{
+		if(f->fim == 0) /// Se caso o ultimo elemento da fila esteja no inicio dela
+		{
+			f->fim = TAM - 1; /// vai remover e voltar para o final da fila
+		}
+		else
+		{
+			f->fim--; /// se caso nao for 0 ele só vai diminuir o tamanho da fila
+		}
+	}
+	else
+	{
+		printf("Lista vazia.\n);
+	}
+	aux = f->itens[f->fim];
+return aux;
+}
+	
+	
